@@ -8,6 +8,11 @@ const copyKeys = {
   NavAbout: 'nav.about',
   NavBlog: 'nav.blog',
   NavContact: 'nav.contact',
+
+  /* HOME > HERO */
+  HomeHeroIntro: 'hero.intro',
+  HomeHeroHeader: 'hero.header',
+  HomeHeroPresentation: 'hero.presentation',
 }
 
 export const copy = [
@@ -36,6 +41,23 @@ export const copy = [
     key: copyKeys.NavContact,
     en: 'Contact',
     sv: 'Kontakt'
+  },
+
+  /* HOME > HERO */
+  {
+    key: copyKeys.HomeHeroIntro,
+    en: "Hello! I'm Anton.",
+    sv: 'Hej! Jag heter Anton.'
+  },
+  {
+    key: copyKeys.HomeHeroHeader,
+    en: "I build and tinker with websites.",
+    sv: 'Jag bygger och fixar webbplatser.'
+  },
+  {
+    key: copyKeys.HomeHeroPresentation,
+    en: "I'm a budding frontend developer based in Stockholm, Sweden, with a passion for learning new things and creating cool stuff.",
+    sv: 'Jag är en blivande frontend utvecklare från Stockholm som älskar att lära mig nya saker och skapa spännande prylar.'
   },
 ]
 

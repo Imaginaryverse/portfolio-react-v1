@@ -13,6 +13,8 @@ html {
   align-items: center;
 
   width: 100vw;
+
+  background-color: var(--clr-black);
 }
 
 .window-restictions {
@@ -36,6 +38,7 @@ html {
 .main-wrapper {
   min-height: 100vh;
   width: 100vw;
+  max-width: 1080px;
 
   overflow-x: hidden;
 
@@ -44,7 +47,7 @@ html {
   justify-content: flex-start;
   align-items: center;
 
-  padding-top: var(--nav-height);
+  padding: var(--nav-height) 2.5vmin 5rem;
 
   background-color: var(--clr-black);
 
