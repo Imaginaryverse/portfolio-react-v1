@@ -1,0 +1,18 @@
+:root {
+
+  /* Text */
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  /* Colors */
+  --clr-black: #141115;
+  --clr-white: #F4EDED;
+  --clr-green-dark: #254A4A;
+  --clr-green-light: #36827F;
+  --clr-purple: #A288A6;
+  --clr-yellow: #F9DB6D;
+
+  /* Units */
+  --nav-height: 80px;
+
+}
