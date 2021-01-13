@@ -73,8 +73,9 @@
 }
 
 .hamburger-btn {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 
   position: relative;
 
@@ -83,10 +84,12 @@
   align-items: center;
 
   cursor: pointer;
+
+  transition: all .15s ease;
 }
 
 .hamburger-btn:hover {
-  animation: bouncy .8s linear forwards;
+  background-color: var(--clr-brown);
 }
 
 @keyframes bouncy {
@@ -143,23 +146,23 @@
 
   position: absolute;
 
-  width: 40px;
+  width: 34px;
   height: 4px;
 
   transition: all .2s ease;
 }
 
 .bar-top {
-  top: 8px;
+  top: 12px;
 }
 
 .bar-bottom {
-  bottom: 8px;
+  bottom: 12px;
 }
 
 .active-top {
   transform: rotate(-45deg);
-  top: 18px;
+  top: 22px;
 }
 
 .active-mid {
@@ -169,7 +172,7 @@
 
 .active-bottom {
   transform: rotate(45deg);
-  bottom: 18px;
+  bottom: 22px;
 }
 
 .hamburger-wrapper {

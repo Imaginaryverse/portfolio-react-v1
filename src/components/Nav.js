@@ -26,7 +26,7 @@ export const Nav = () => {
         className='nav-list-link'
         to='/'>
           <Text
-          copyText='A.B'
+          copyText='{AB}'
           style={{ fontSize: '1.8rem', fontWeight: '800' }}
           />
         </Link>
