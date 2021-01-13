@@ -62,10 +62,17 @@
   background-color: transparent;
 
   padding: 0 1.5vmin;
+  border-radius: 15px;
 
   cursor: pointer;
 
   color: var(--clr-white);
+
+  transition: all .15s ease;
+}
+
+.nav-lang-btn:hover {
+  background-color: var(--clr-brown);
 }
 
 .nav-lang-btn-hamburger {
