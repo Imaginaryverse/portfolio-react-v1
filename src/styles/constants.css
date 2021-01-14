@@ -1,21 +1,19 @@
 :root {
-
   /* Text */
   font-size: 18px;
   letter-spacing: 2px;
 
   /* Colors */
   --clr-black: #141115;
-  --clr-brown: #2B242D;
-  --clr-white: #F4EDED;
-  --clr-green-dark: #254A4A;
-  --clr-green-light: #36827F;
-  --clr-purple: #A288A6;
-  --clr-yellow: #F9DB6D;
-  --clr-orange-light: #F46036;
-  --clr-orange-dark: #E93C0C;
+  --clr-brown: #2b242d;
+  --clr-white: #f4eded;
+  --clr-green-dark: #254a4a;
+  --clr-green-light: #36827f;
+  --clr-purple: #a288a6;
+  --clr-yellow: #f9db6d;
+  --clr-orange-light: #f46036;
+  --clr-orange-dark: #e93c0c;
 
   /* Units */
   --nav-height: 80px;
-
 }

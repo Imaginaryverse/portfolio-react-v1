@@ -1,54 +1,51 @@
-import React from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import ScrollToTop from './utils/ScrollToTop'
-import Store from './store/Store'
-import routes from './utils/Routes'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import About from './pages/About'
-import Blog from './pages/Blog'
-import Contact from './pages/Contact'
-import { Nav } from './components/Nav'
+import React, { useEffect, useContext } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './utils/ScrollToTop';
+import routes from './utils/Routes';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import { Nav } from './components/Nav';
+import ActionTypes from './store/Actions';
+import { Context } from './store/Store';
 
 const Router = () => {
+  const [state, dispatch] = useContext(Context);
+
+  const setLangFromLocal = () => {
+    const localLang = JSON.parse(localStorage.getItem('language'));
+    const localLangIsNew = localLang && localLang !== state.language;
+    if (localLangIsNew) {
+      dispatch({ type: ActionTypes.SET_LANGUAGE, payload: localLang });
+    }
+  };
+
+  useEffect(() => {
+    setLangFromLocal();
+  });
+
   return (
     <BrowserRouter>
-      <Store>
-        <div className="app">
+      <div className="app">
+        <Nav />
 
-          <Nav />
-
-          <div className="window-restrictions">
-            <div className="content-wrapper">
-              <ScrollToTop />
-              <Switch>
-                <Route
-                exact path={ routes.home }
-                component={ Home }
-                />
-                <Route
-                exact path={ routes.projects }
-                component={ Projects }
-                />
-                <Route
-                exact path={ routes.about }
-                component={ About }
-                />
-                <Route
-                exact path={ routes.blog }
-                component={ Blog }
-                />
-                <Route
-                exact path={ routes.contact }
-                component={ Contact }
-                />
-              </Switch>
-            </div>
+        <div className="window-restrictions">
+          <div className="content-wrapper">
+            <ScrollToTop />
+            <Switch>
+              <Route exact path={routes.home} component={Home} />
+              <Route exact path={routes.projects} component={Projects} />
+              <Route exact path={routes.about} component={About} />
+              <Route exact path={routes.blog} component={Blog} />
+              <Route exact path={routes.contact} component={Contact} />
+            </Switch>
           </div>
         </div>
-      </Store>
+      </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;
