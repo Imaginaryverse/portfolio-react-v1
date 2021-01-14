@@ -56,7 +56,7 @@ export const copy = [
   },
   {
     key: copyKeys.HomeHeroPresentation,
-    en: "I'm a budding frontend developer based in Stockholm, Sweden, with a passion for learning new things and creating cool stuff.",
+    en: "I'm a budding frontend developer from Stockholm, Sweden, with a passion for learning new things and creating cool stuff.",
     sv: 'Jag är en blivande frontend utvecklare från Stockholm som älskar att lära mig nya saker och skapa spännande prylar.'
   },
 ]

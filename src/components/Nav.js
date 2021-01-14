@@ -28,7 +28,7 @@ export const Nav = () => {
         >
           <Text
           copyText='{AB}'
-          style={{ fontSize: '1.8rem', fontWeight: '800' }}
+          style={{ fontSize: '1.8rem', fontWeight: '600' }}
           />
         </Link>
 

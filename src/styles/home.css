@@ -71,3 +71,41 @@
   color: var(--clr-orange-dark);
   width: 18px;
 }
+
+@media screen and (max-width: 425px) {
+  .hero {
+    padding: 2.5vmin 2.5vmin 10vmin;
+  }
+
+  .hero-intro {
+    font-size: 7vmin;
+
+    margin-bottom: .5rem;
+  }
+
+  .hero-header {
+    font-size: 12.5vmin;
+
+    max-width: 250px;
+
+    margin-bottom: .5rem;
+  }
+
+  .hero-presentation {
+    font-size: 7vmin;
+
+    max-width: 350px;
+
+    margin: .5rem 0 2rem;
+  }
+
+  .hero-cta {
+    font-size: 5vmin;
+
+    padding: .5rem 1rem;
+  }
+
+  .hero-cta-arrow {
+    width: 18px;
+  }
+}
