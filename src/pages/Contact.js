@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import EmailForm from '../components/EmailForm';
 
 const Contact = () => {
   return (
-    <div className='main-wrapper'>
+    <div className="main-wrapper">
       <h1>Contact</h1>
-    </div>
-  )
-}
 
-export default Contact
+      <EmailForm />
+    </div>
+  );
+};
+
+export default Contact;

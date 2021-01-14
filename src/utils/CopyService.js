@@ -13,6 +13,16 @@ const copyKeys = {
   HomeHeroIntro: 'hero.intro',
   HomeHeroHeader: 'hero.header',
   HomeHeroPresentation: 'hero.presentation',
+
+  /* CONTACT > CONTACT FORM */
+  ContactFormName: 'contact.form.name',
+  ContactFormEmail: 'contact.form.email',
+  ContactFormMessage: 'contact.form.message',
+  ContactFormCalculate: 'contact.form.calculate',
+  ContactFormValidationInfo: 'contact.form.validation.info',
+  ContactFormSubmit: 'contact.form.submit',
+  ContactFormSentMessage: 'contact.form.sent.message',
+  ContactFormAnotherMessage: 'contact.form.another.message',
 };
 
 export const copy = [
@@ -61,20 +71,57 @@ export const copy = [
     sv:
       'Jag är en blivande frontend utvecklare från Stockholm som älskar att lära mig nya saker och skapa spännande prylar.',
   },
+
+  /* CONTACT > FORM */
+  {
+    key: copyKeys.ContactFormName,
+    en: 'Name (required)',
+    sv: 'Namn (obligatoriskt)',
+  },
+  {
+    key: copyKeys.ContactFormEmail,
+    en: 'Email (required)',
+    sv: 'E-post (obligatoriskt)',
+  },
+  {
+    key: copyKeys.ContactFormMessage,
+    en: 'Message (required)',
+    sv: 'Meddelande (obligatoriskt)',
+  },
+  {
+    key: copyKeys.ContactFormCalculate,
+    en: 'Calculate',
+    sv: 'Beräkna',
+  },
+  {
+    key: copyKeys.ContactFormValidationInfo,
+    en: '*Validate by entering the correct answer in the field above.',
+    sv: '*Validera genom att skriva korrekt svar i fältet ovanför.',
+  },
+  {
+    key: copyKeys.ContactFormSubmit,
+    en: 'SUBMIT',
+    sv: 'SKICKA',
+  },
+  {
+    key: copyKeys.ContactFormSentMessage,
+    en: 'Message sent!',
+    sv: 'Meddelande skickat!',
+  },
+  {
+    key: copyKeys.ContactFormAnotherMessage,
+    en: 'Send another?',
+    sv: 'Skicka nytt?',
+  },
 ];
 
-export const useCopy = (copyKeysArr) => {
+export const useCopy = () => {
   const [state] = useContext(Context);
-  const selectedCopy = copyKeysArr.map((copyKey) =>
-    copy.find((item) => item.key === copyKey)
-  );
 
-  return selectedCopy.length
-    ? selectedCopy.reduce(
-        (o, item) => ({ ...o, [item.key]: item[state.language] }),
-        {}
-      )
-    : {};
+  return copy.reduce(
+    (o, item) => ({ ...o, [item.key]: item[state.language] }),
+    {}
+  );
 };
 
 export default copyKeys;

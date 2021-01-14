@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Context } from '../store/Store';
-import { copy } from '../utils/CopyService';
+import { useCopy } from '../utils/CopyService';
 
 const Text = ({
   copyText,
@@ -13,14 +13,10 @@ const Text = ({
   capitalizeEach,
 }) => {
   const [state] = useContext(Context);
+  const copy = useCopy();
 
   const getCopy = () => {
-    const selectedCopy = copy.find((item) => item.key === copyKey);
-    const print = selectedCopy
-      ? selectedCopy[state.language]
-      : copyText
-      ? copyText
-      : copyKey;
+    const print = copy[copyKey] ? copy[copyKey] : copyText ? copyText : copyKey;
 
     const formattedText = upperCase
       ? print.toUpperCase()
