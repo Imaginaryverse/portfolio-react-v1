@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/home.css';
 import copyKeys from '../utils/CopyService';
+import icons from '../utils/Icons';
+import IconFA from './IconFA';
 import Text from './Text';
 
 const Hero = () => {
@@ -16,7 +18,9 @@ const Hero = () => {
         <Text copyKey={copyKeys.HomeHeroPresentation} />
       </p>
       <a href="#" className="hero-cta">
-        <div className="hero-cta-arrow">></div>
+        <div className="hero-cta-arrow-container">
+          <IconFA icon={icons.chevronRight} className="hero-cta-arrow" />
+        </div>
         Projects
       </a>
     </div>
