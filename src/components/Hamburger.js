@@ -1,14 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import LanguageButton from './LanguageButton'
 import Text from './Text'
 
-const Hamburger = ({ navItems }) => {
-  const [ active, setActive ] = useState(false)
-
-  const handleClick = () => {
-    setActive(!active)
-  }
+const Hamburger = ({ navItems, handleClick, active }) => {
 
   return (
     <>

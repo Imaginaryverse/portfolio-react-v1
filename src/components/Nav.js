@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import copyKeys from '../utils/CopyService'
 import routes from '../utils/Routes'
@@ -10,7 +10,12 @@ import Hamburger from './Hamburger'
 import '../styles/nav.css'
 
 export const Nav = () => {
+  const [ openBurger, setOpenBurger ] = useState(false)
   const { width } = useWindowDimensions()
+
+  const handleHamburger = () => {
+    setOpenBurger(!openBurger)
+  }
 
   const navItems = [
     {path: routes.projects, title: copyKeys.NavProjects},
@@ -25,6 +30,9 @@ export const Nav = () => {
         <Link
         className='nav-list-link'
         to='/'
+        onClick={() => {
+          openBurger && handleHamburger()
+        }}
         >
           <Text
           copyText='{AB}'
@@ -34,7 +42,11 @@ export const Nav = () => {
 
         { width > 768
         ? <NavList navItems={navItems}/>
-        : <Hamburger navItems={navItems}/>
+        : <Hamburger
+        navItems={navItems}
+        handleClick={handleHamburger}
+        active={openBurger}
+        />
         }
       </div>
     </nav>
