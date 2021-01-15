@@ -128,6 +128,8 @@
 .active-top {
   transform: rotate(-45deg);
   top: 22px;
+
+  animation: burger-bar 0.7s ease forwards;
 }
 
 .active-mid {
@@ -139,6 +141,8 @@
 .active-bottom {
   transform: rotate(45deg);
   bottom: 22px;
+
+  animation: burger-bar 0.7s ease forwards;
 }
 
 .hamburger-wrapper {
@@ -190,5 +194,17 @@
     width: 100vw;
 
     right: 0;
+  }
+}
+
+@keyframes burger-bar {
+  0% {
+    width: 30px;
+  }
+  50% {
+    width: 2px;
+  }
+  100% {
+    width: 30px;
   }
 }
