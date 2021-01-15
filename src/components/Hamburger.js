@@ -6,7 +6,10 @@ import Text from './Text';
 const Hamburger = ({ navItems, handleClick, active }) => {
   return (
     <>
-      <div className="hamburger-btn" onClick={handleClick}>
+      <div
+        onClick={handleClick}
+        className={`hamburger-btn ${active ? 'active-hamburger' : null}`}
+      >
         <div
           className={`hamburger-bar bar-top ${active ? 'active-top' : null}`}
         ></div>
