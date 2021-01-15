@@ -3,6 +3,7 @@ import Reducer from './Reducer';
 
 const initialState = {
   language: 'sv',
+  theme: 'dark',
 };
 
 const Store = ({ children }) => {

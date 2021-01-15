@@ -7,6 +7,11 @@ const Reducer = (state, action) => {
         ...state,
         language: action.payload,
       };
+    case ActionTypes.SET_THEME:
+      return {
+        ...state,
+        theme: action.payload,
+      };
 
     default:
       return state;

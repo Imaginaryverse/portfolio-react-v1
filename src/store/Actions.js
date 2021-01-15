@@ -1,3 +1,3 @@
-const ActionTypes = { SET_LANGUAGE: 'SET_LANGUAGE' }
+const ActionTypes = { SET_LANGUAGE: 'SET_LANGUAGE', SET_THEME: 'SET_THEME' };
 
-export default ActionTypes
+export default ActionTypes;
