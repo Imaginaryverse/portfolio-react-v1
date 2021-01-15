@@ -1,11 +1,10 @@
 import React from 'react';
 import EmailForm from '../components/EmailForm';
+import '../styles/contact.css';
 
 const Contact = () => {
   return (
     <div className="main-wrapper">
-      <h1>Contact</h1>
-
       <EmailForm />
     </div>
   );

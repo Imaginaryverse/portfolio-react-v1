@@ -15,6 +15,7 @@ const copyKeys = {
   HomeHeroPresentation: 'hero.presentation',
 
   /* CONTACT > CONTACT FORM */
+  ContactFormH1: 'contact.form.h1',
   ContactFormName: 'contact.form.name',
   ContactFormEmail: 'contact.form.email',
   ContactFormMessage: 'contact.form.message',
@@ -74,6 +75,11 @@ export const copy = [
 
   /* CONTACT > FORM */
   {
+    key: copyKeys.ContactFormH1,
+    en: 'Email me',
+    sv: 'Maila mig',
+  },
+  {
     key: copyKeys.ContactFormName,
     en: 'Name (required)',
     sv: 'Namn (obligatoriskt)',
@@ -95,8 +101,10 @@ export const copy = [
   },
   {
     key: copyKeys.ContactFormValidationInfo,
-    en: '*Validate by entering the correct answer in the field above.',
-    sv: '*Validera genom att skriva korrekt svar i fältet ovanför.',
+    en:
+      'I like robots, but not spam. Confirm that you are human by entering the correct answer in the field above.',
+    sv:
+      'Jag gillar robotar, men inte spam. Bekräfta att du är mänsklig genom att skriva korrekt svar i fältet ovanför.',
   },
   {
     key: copyKeys.ContactFormSubmit,

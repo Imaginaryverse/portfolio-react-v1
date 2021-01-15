@@ -88,6 +88,10 @@ const EmailForm = () => {
             handleSubmit(e);
           }}
         >
+          <h1 className="form-h1">
+            <Text copyKey={copyKeys.ContactFormH1} />
+          </h1>
+
           <Input
             type="text"
             name="field-name"
@@ -121,9 +125,9 @@ const EmailForm = () => {
 
           <Input
             type="text"
-            name="field-validation"
-            id="field-validation"
-            className="input-validation"
+            name="field-calculate"
+            id="field-calculate"
+            className="input-calculate"
             placeholderCopy={`${copy[copyKeys.ContactFormCalculate]} ${
               question?.valueOne
             } ${question?.operator} ${question?.valueTwo}`}
@@ -132,10 +136,10 @@ const EmailForm = () => {
             required
           />
 
-          <label htmlFor="field-validation">
+          <label htmlFor="field-validation-info">
             <Text
               copyKey={copyKeys.ContactFormValidationInfo}
-              className="form-valid-desc"
+              className="form-validation-info"
             />
           </label>
 
