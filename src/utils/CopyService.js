@@ -40,7 +40,7 @@ export const copy = [
   },
   {
     key: copyKeys.NavAbout,
-    en: 'About',
+    en: 'About Me',
     sv: 'Om Anton',
   },
   {
