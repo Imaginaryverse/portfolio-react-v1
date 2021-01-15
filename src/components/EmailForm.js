@@ -71,15 +71,18 @@ const EmailForm = () => {
   return (
     <div className="form-wrapper">
       {messageSent ? (
-        <>
-          <Text copyKey={copyKeys.ContactFormSentMessage} />
+        <div className="msg-sent-wrapper">
+          <Text
+            copyKey={copyKeys.ContactFormSentMessage}
+            className="msg-sent-prompt"
+          />
           <button
-            className="form-another-btn"
+            className="send-another-btn"
             onClick={() => setMessageSent(false)}
           >
             <Text copyKey={copyKeys.ContactFormAnotherMessage} />
           </button>
-        </>
+        </div>
       ) : (
         <form
           action="submit"
