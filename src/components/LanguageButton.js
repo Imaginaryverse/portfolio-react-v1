@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Context } from '../store/Store';
 import ActionTypes from '../store/Actions';
 
@@ -18,7 +18,7 @@ const LanguageButton = ({ className }) => {
   return (
     <button
       className={`nav-lang-btn ${className}`}
-      onClick={() => changeLanguage(state.language === 'sv' ? 'en' : 'sv')}
+      onClick={() => changeLanguage(selectedSv ? 'en' : 'sv')}
     >
       <p
         style={{

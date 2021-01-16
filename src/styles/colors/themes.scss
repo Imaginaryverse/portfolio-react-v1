@@ -26,7 +26,12 @@ $clr-orange-dark: #e93c0c;
     }
   }
 
-  .nav-lang-btn {
+  .nav-list-text {
+    background-image: linear-gradient($clr-white, $clr-white);
+  }
+
+  .nav-lang-btn,
+  .nav-theme-btn {
     color: $clr-white;
 
     &:hover {
@@ -87,7 +92,8 @@ $clr-orange-dark: #e93c0c;
 
   /* CONTACT > EMAIL FORM */
 
-  .input-submit {
+  .input-submit,
+  .send-another-btn {
     &:enabled {
       background-color: $clr-green-light;
       &:hover {

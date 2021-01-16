@@ -2,6 +2,13 @@ import React, { useContext } from 'react';
 import { Context } from '../store/Store';
 import { useCopy } from '../utils/CopyService';
 
+export const textTypes = {
+  headerLarge: 'header-large',
+  headerNormal: 'header-normal',
+  headerSmall: 'header-small',
+  paragraph: 'paragraph',
+};
+
 const Text = ({
   copyText,
   copyKey,

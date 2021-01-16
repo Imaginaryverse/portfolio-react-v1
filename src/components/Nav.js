@@ -37,6 +37,7 @@ export const Nav = () => {
           <Text
             copyText="{AB}"
             style={{ fontSize: '1.9rem', fontWeight: '600' }}
+            className="nav-list-text"
           />
         </Link>
 

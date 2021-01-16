@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LanguageButton from './LanguageButton';
 import Text from './Text';
+import ThemeButton from './ThemeButton';
 
 const Hamburger = ({ navItems, handleClick, active }) => {
   return (
@@ -35,13 +36,15 @@ const Hamburger = ({ navItems, handleClick, active }) => {
               >
                 <li>
                   <Text
+                    className="nav-list-text"
                     copyKey={item.title}
                     style={{ fontSize: '1.5rem', fontWeight: 'normal' }}
                   />
                 </li>
               </Link>
             ))}
-            <LanguageButton className="nav-lang-btn-hamburger" />
+            <LanguageButton className="nav-opt-btn-hamburger" />
+            <ThemeButton className="nav-opt-btn-hamburger" />
           </ul>
         </div>
       )}
