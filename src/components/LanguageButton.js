@@ -1,15 +1,13 @@
 import React, { useContext } from 'react';
 import { Context } from '../store/Store';
 import ActionTypes from '../store/Actions';
+import { saveToLocal } from '../utils/LocalStorageUtils';
 
 const LanguageButton = ({ className }) => {
   const [state, dispatch] = useContext(Context);
-  const saveToLocal = (language) => {
-    localStorage.setItem('language', JSON.stringify(language));
-  };
 
   const changeLanguage = (language) => {
-    saveToLocal(language);
+    saveToLocal('language', language);
     dispatch({ type: ActionTypes.SET_LANGUAGE, payload: language });
   };
 

@@ -88,6 +88,10 @@
   transition: all 0.15s ease;
 }
 
+.nav-site-options button:last-child {
+  margin-left: 0.5vmin;
+}
+
 .hamburger-btn {
   width: 48px;
   height: 48px;
@@ -182,10 +186,6 @@
 .nav-site-options {
   display: flex;
   padding-right: 1.5vmax;
-}
-
-.nav-site-options button:last-child {
-  margin-left: 0.5vmin;
 }
 
 @keyframes wrapper-active {

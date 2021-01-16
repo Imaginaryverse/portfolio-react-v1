@@ -19,11 +19,12 @@ const Projects = () => {
           item={itemList[currentItem - 1]}
         />
       ) : (
-        itemList.map((item) => (
+        itemList.map((item, i) => (
           <ProjectList
             currentItem={currentItem}
             setCurrentItem={setCurrentItem}
             item={item}
+            index={i}
           />
         ))
       )}

@@ -11,21 +11,20 @@ import { Nav } from './components/Nav';
 import ActionTypes from './store/Actions';
 import { Context } from './store/Store';
 import { useTheme } from './utils/ThemeService';
+import { setStateFromLocal } from './utils/LocalStorageUtils';
 
 const Router = () => {
   const [state, dispatch] = useContext(Context);
   const theme = useTheme();
 
-  const setLangFromLocal = () => {
-    const localLang = JSON.parse(localStorage.getItem('language'));
-    const localLangIsNew = localLang && localLang !== state.language;
-    if (localLangIsNew) {
-      dispatch({ type: ActionTypes.SET_LANGUAGE, payload: localLang });
-    }
-  };
-
   useEffect(() => {
-    setLangFromLocal();
+    setStateFromLocal(
+      'language',
+      state.language,
+      ActionTypes.SET_LANGUAGE,
+      dispatch
+    );
+    setStateFromLocal('theme', state.theme, ActionTypes.SET_THEME, dispatch);
   });
 
   return (
