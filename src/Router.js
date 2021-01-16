@@ -30,11 +30,11 @@ const Router = () => {
 
   return (
     <BrowserRouter>
-      <div className={`app ${theme}`}>
+      <div className={`app clr-bg-primary ${theme}`}>
         <Nav />
 
         <div className="window-restrictions">
-          <div className="content-wrapper">
+          <div className="content-wrapper clr-bg-primary">
             <ScrollToTop />
             <Switch>
               <Route exact path={routes.home} component={Home} />

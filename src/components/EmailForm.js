@@ -77,7 +77,7 @@ const EmailForm = () => {
             className="msg-sent-prompt"
           />
           <button
-            className="send-another-btn"
+            className="send-another-btn clr-disabled-btn"
             onClick={() => setMessageSent(false)}
           >
             <Text copyKey={copyKeys.ContactFormAnotherMessage} />
@@ -148,7 +148,7 @@ const EmailForm = () => {
 
           <Input
             type="submit"
-            className="input-submit"
+            className="input-submit clr-disabled-btn"
             valueCopyKey={copyKeys.ContactFormSubmit}
             disabled={disableSubmit}
           />

@@ -26,9 +26,9 @@ export const Nav = () => {
 
   return (
     <nav className="nav">
-      <div className="nav-content-wrapper">
+      <div className="nav-content-wrapper clr-bg-primary">
         <Link
-          className="nav-list-link"
+          className="nav-list-link clr-text-primary"
           to="/"
           onClick={() => {
             openBurger && handleHamburger();

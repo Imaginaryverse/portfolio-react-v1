@@ -25,8 +25,8 @@ const Hamburger = ({ navItems, handleClick, active }) => {
       </div>
 
       {active && (
-        <div className="hamburger-wrapper">
-          <ul className="hamburger-content">
+        <div className="hamburger-wrapper clr-bg-primary">
+          <ul className="hamburger-content clr-bg-primary">
             {navItems.map((item, i) => (
               <Link
                 className="nav-list-link hamburger-link"
@@ -36,7 +36,7 @@ const Hamburger = ({ navItems, handleClick, active }) => {
               >
                 <li>
                   <Text
-                    className="nav-list-text"
+                    className="nav-list-text clr-text-primary"
                     copyKey={item.title}
                     style={{ fontSize: '1.5rem', fontWeight: 'normal' }}
                   />

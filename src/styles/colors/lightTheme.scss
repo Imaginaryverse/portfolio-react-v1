@@ -1,0 +1,104 @@
+/* Colors */
+$clr-text-primary: #141115;
+$clr-brown: #352e37;
+$clr-bg-primary: #f4eded;
+$clr-tertiary-dark: #254a4a;
+$clr-tertiary-light: #36827f;
+$clr-purple: #a288a6;
+$clr-bg-secondary: #f9db6d;
+$clr-accent-light: #f46036;
+$clr-accent-dark: #e93c0c;
+$clr-disabled-btn: #f46036;
+$clr-enabled-btn: #e93c0c;
+
+.theme-light {
+  color: $clr-text-primary;
+
+  /* UTILS */
+  .clr-text-primary {
+    color: $clr-text-primary;
+  }
+
+  .clr-bg-primary {
+    background-color: $clr-bg-primary;
+  }
+
+  .clr-acc {
+    color: $clr-accent-light;
+  }
+
+  .acc-hov {
+    color: $clr-accent-light;
+
+    &:hover {
+      color: $clr-accent-dark;
+    }
+  }
+
+  .clr-disabled-btn {
+    &:enabled {
+      background-color: $clr-enabled-btn;
+      &:hover {
+        color: $clr-bg-primary;
+      }
+    }
+    &:disabled {
+      background-color: $clr-disabled-btn;
+    }
+  }
+
+  /* NAV */
+  .nav-list-link {
+    &:before {
+      background-color: $clr-text-primary;
+    }
+  }
+
+  .nav-list-text {
+    background-image: linear-gradient($clr-text-primary, $clr-text-primary);
+  }
+
+  .nav-lang-btn,
+  .nav-theme-btn {
+    color: $clr-text-primary;
+
+    &:hover {
+      background-color: $clr-bg-secondary;
+    }
+  }
+
+  .hamburger-btn {
+    &:hover {
+      background-color: $clr-bg-secondary;
+    }
+
+    .hamburger-bar {
+      background-color: $clr-text-primary;
+    }
+
+    .hamburger-link {
+      &:before {
+        background-color: $clr-text-primary;
+      }
+    }
+  }
+
+  /* HOME > HERO */
+
+  .hero-cta {
+    border: 1px solid $clr-accent-light;
+    color: $clr-accent-light;
+
+    &:hover {
+      border: 1px solid $clr-accent-dark;
+      color: $clr-accent-dark;
+    }
+  }
+
+  /* CONTACT > EMAIL FORM */
+  .input-text,
+  .input-msg,
+  .input-calculate {
+    border: 1px solid $clr-text-primary;
+  }
+}

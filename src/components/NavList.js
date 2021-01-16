@@ -12,7 +12,7 @@ const NavList = ({ navItems }) => {
           <Link className="nav-list-link" key={i} to={item.path}>
             <li>
               <Text
-                className="nav-list-text"
+                className="nav-list-text clr-text-primary"
                 copyKey={item.title}
                 style={{ fontSize: '1.2rem' }}
               />

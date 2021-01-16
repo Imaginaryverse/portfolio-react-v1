@@ -10,16 +10,16 @@ import Text, { textTypes } from './Text';
 const Hero = () => {
   return (
     <div className="hero">
-      <Link to={routes.about} className="hero-intro">
+      <Link to={routes.about} className="hero-intro acc-hov">
         <Text copyKey={copyKeys.HomeHeroIntro} />
       </Link>
       <Text
         type={textTypes.headerLarge}
-        className="hero-header"
+        className="hero-header clr-text-primary"
         copyKey={copyKeys.HomeHeroHeader}
       />
       <Text
-        className="hero-presentation"
+        className="hero-presentation clr-text-primary"
         copyKey={copyKeys.HomeHeroPresentation}
       />
       <Link to={routes.projects} className="hero-cta">
