@@ -25,7 +25,6 @@ const Hamburger = ({ navItems, handleClick, active }) => {
 
       {active && (
         <div className="hamburger-wrapper">
-          {' '}
           <ul className="hamburger-content">
             {navItems.map((item, i) => (
               <Link

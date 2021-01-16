@@ -1,0 +1,115 @@
+/* Colors */
+$clr-black: #141115;
+$clr-brown: #352e37;
+$clr-white: #f4eded;
+$clr-green-dark: #254a4a;
+$clr-green-light: #36827f;
+$clr-purple: #a288a6;
+$clr-yellow: #f9db6d;
+$clr-orange-light: #f46036;
+$clr-orange-dark: #e93c0c;
+
+.theme-dark {
+  background-color: $clr-black;
+  color: $clr-white;
+
+  /* NAV */
+  .nav-content-wrapper {
+    background-color: $clr-black;
+  }
+
+  .nav-list-link {
+    color: $clr-white;
+
+    &:before {
+      background-color: $clr-white;
+    }
+  }
+
+  .nav-lang-btn {
+    color: $clr-white;
+
+    &:hover {
+      background-color: $clr-brown;
+    }
+  }
+
+  .hamburger-btn {
+    &:hover {
+      background-color: $clr-brown;
+    }
+
+    .hamburger-bar {
+      background-color: $clr-white;
+    }
+
+    .hamburger-link {
+      &:before {
+        background-color: $clr-white;
+      }
+    }
+  }
+
+  .hamburger-wrapper {
+    background-color: $clr-black;
+  }
+
+  /* HOME > HERO */
+  .content-wrapper {
+    background-color: $clr-black;
+  }
+
+  .hero-intro {
+    color: $clr-orange-light;
+
+    &:hover {
+      color: $clr-orange-dark;
+    }
+  }
+
+  .hero-header {
+    color: $clr-white;
+  }
+
+  .hero-presentation {
+    color: $clr-white;
+  }
+
+  .hero-cta {
+    border: 1px solid $clr-orange-light;
+    color: $clr-orange-light;
+
+    &:hover {
+      border: 1px solid $clr-orange-dark;
+      color: $clr-orange-dark;
+    }
+  }
+
+  /* CONTACT > EMAIL FORM */
+
+  .input-submit {
+    &:enabled {
+      background-color: $clr-green-light;
+      &:hover {
+        color: $clr-white;
+      }
+    }
+    &:disabled {
+      background-color: $clr-green-dark;
+    }
+  }
+}
+
+.theme-light {
+  /* .content-wrapper {
+    background-color: $clr-white;
+  }
+
+  .hero-intro {
+    color: $clr-orange-light;
+
+    &:hover {
+      color: $clr-orange-dark;
+    }
+  } */
+}

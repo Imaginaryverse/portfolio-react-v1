@@ -1,5 +1,5 @@
-@import './constants.scss';
-
+@import 'layouts/constants';
+@import 'colors/themes';
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;800&display=swap');
 
 html {
@@ -13,8 +13,6 @@ html {
   align-items: center;
 
   width: 100vw;
-
-  background-color: var(--clr-black);
 }
 
 .window-restictions {
@@ -48,10 +46,6 @@ html {
   align-items: center;
 
   padding: var(--nav-height) 2.5vmin 5rem;
-
-  background-color: var(--clr-black);
-
-  color: var(--clr-white);
 }
 
 /* CSS RESET */

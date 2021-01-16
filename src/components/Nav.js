@@ -7,7 +7,7 @@ import NavList from './NavList';
 import Text from './Text';
 import Hamburger from './Hamburger';
 
-import '../styles/nav.scss';
+import '../styles/layouts/nav.scss';
 
 export const Nav = () => {
   const [openBurger, setOpenBurger] = useState(false);

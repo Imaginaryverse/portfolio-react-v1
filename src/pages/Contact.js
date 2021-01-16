@@ -1,6 +1,6 @@
 import React from 'react';
 import EmailForm from '../components/EmailForm';
-import '../styles/contact.scss';
+import '../styles/layouts/contact.scss';
 
 const Contact = () => {
   return (

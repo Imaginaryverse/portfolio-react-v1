@@ -10,9 +10,11 @@ import Contact from './pages/Contact';
 import { Nav } from './components/Nav';
 import ActionTypes from './store/Actions';
 import { Context } from './store/Store';
+import { useTheme } from './utils/ThemeService';
 
 const Router = () => {
   const [state, dispatch] = useContext(Context);
+  const theme = useTheme();
 
   const setLangFromLocal = () => {
     const localLang = JSON.parse(localStorage.getItem('language'));
@@ -28,7 +30,7 @@ const Router = () => {
 
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className={`app ${theme}`}>
         <Nav />
 
         <div className="window-restrictions">

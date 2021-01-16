@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/home.scss';
+import '../styles/layouts/home.scss';
 import copyKeys from '../utils/CopyService';
 import icons from '../utils/Icons';
 import IconFA from './IconFA';

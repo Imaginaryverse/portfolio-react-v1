@@ -30,15 +30,10 @@
 
   cursor: pointer;
 
-  background-color: var(--clr-green-light);
   border: none;
   border-radius: 25px;
 
   transition: all 0.15s ease;
-}
-
-.send-another-btn:hover {
-  color: var(--clr-white);
 }
 
 .form-content {
@@ -68,7 +63,6 @@
 
   border: none;
   border-radius: 5px;
-  background-color: var(--clr-white);
 
   outline: none;
 }
@@ -100,18 +94,6 @@
   border-radius: 25px;
 
   transition: all 0.15s ease;
-}
-
-.input-submit:enabled {
-  background-color: var(--clr-green-light);
-}
-
-.input-submit:enabled:hover {
-  color: var(--clr-white);
-}
-
-.input-submit:disabled {
-  background-color: var(--clr-green-dark);
 }
 
 .form-validation-info {
