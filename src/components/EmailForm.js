@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import copyKeys, { useCopy } from '../utils/CopyService';
 import Input from './Input';
-import '../styles/emailform.css';
+import '../styles/emailform.scss';
 import Text from './Text';
 import {
   createRandomNum,
