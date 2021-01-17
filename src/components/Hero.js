@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/layouts/home.scss';
+import '../styles/colors/themes.scss';
 import copyKeys from '../utils/CopyService';
 import icons from '../utils/Icons';
 import routes from '../utils/Routes';
@@ -12,6 +13,12 @@ const Hero = () => {
     <div className="hero">
       <Link to={routes.about} className="hero-intro acc-hov">
         <Text copyKey={copyKeys.HomeHeroIntro} />
+        <div className="hero-emoji">
+          🧑🏻‍💻
+          <span className="hero-emoji-question-one">?</span>
+          <span className="hero-emoji-question-two">?</span>
+          <span className="hero-emoji-aha">Aha!</span>
+        </div>
       </Link>
       <Text
         type={textTypes.headerLarge}

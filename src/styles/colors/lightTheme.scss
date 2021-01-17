@@ -1,15 +1,13 @@
 /* Colors */
-$clr-text-primary: #141115;
-$clr-brown: #352e37;
 $clr-bg-primary: #f4eded;
+$clr-text-primary: #2b242d;
+$clr-bg-secondary: #e0cccc;
 $clr-tertiary-dark: #254a4a;
 $clr-tertiary-light: #36827f;
-$clr-purple: #a288a6;
-$clr-bg-secondary: #f9db6d;
-$clr-accent-light: #f46036;
-$clr-accent-dark: #e93c0c;
-$clr-disabled-btn: #f46036;
-$clr-enabled-btn: #e93c0c;
+$clr-accent-light: #dc4151;
+$clr-accent-dark: #cf2637;
+$clr-disabled-btn: #afbae9;
+$clr-enabled-btn: #7f90dc;
 
 .theme-light {
   background-color: $clr-bg-primary;
