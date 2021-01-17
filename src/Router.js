@@ -12,6 +12,7 @@ import ActionTypes from './store/Actions';
 import { Context } from './store/Store';
 import { useTheme } from './utils/ThemeService';
 import { setStateFromLocal } from './utils/LocalStorageUtils';
+import Footer from './components/Footer';
 
 const Router = () => {
   const [state, dispatch] = useContext(Context);
@@ -43,6 +44,7 @@ const Router = () => {
               <Route exact path={routes.contact} component={Contact} />
             </Switch>
           </div>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
