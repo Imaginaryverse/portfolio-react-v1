@@ -127,7 +127,7 @@ export const copy = [
   {
     key: copyKeys.AboutParaFour,
     en:
-      "To be able to commit myself to a project is both motivating and stimulating for me and I always strive to finish my projects on time. I'm also keenly aware of details and the role they play with regards to the presentation of a project.",
+      "To be able to commit myself to a project is both motivating and stimulating for me and I always strive to finish my projects on time. I'm also mindful of details and the role they play with regards to the presentation of a project.",
     sv:
       'Att kunna engagera mig i ett projekt finner jag både motiverande och stimulerande och jag gör alltid mitt yttersta för att göra klart ett projekt i tid. Jag är även mån om detaljer och den viktiga roll de spelar vad gäller ett projekts presentation.',
   },

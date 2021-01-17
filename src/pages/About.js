@@ -10,28 +10,43 @@ const About = () => {
     <div className="main-wrapper">
       <div className="about-content">
         <div className="about-body">
-          <Text
-            className="about-header clr-text-primary"
-            copyKey={copyKeys.AboutHeaderAbout}
-          />
-          <img src={lovem1} alt="Anton" className="about-img" />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaOne} />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaTwo} />
+          <div className="about-body-cell">
+            <Text
+              className="about-header clr-text-primary"
+              copyKey={copyKeys.AboutHeaderAbout}
+            />
+            <img src={lovem1} alt="Anton" className="about-img" />
+            <Text className="about-paragraph" copyKey={copyKeys.AboutParaOne} />
+            <Text className="about-paragraph" copyKey={copyKeys.AboutParaTwo} />
+          </div>
 
-          <Text
-            className="about-header clr-text-primary"
-            copyKey={copyKeys.AboutHeaderStrengths}
-          />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaThree} />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaFour} />
+          <div className="about-body-cell">
+            <Text
+              className="about-header clr-text-primary"
+              copyKey={copyKeys.AboutHeaderStrengths}
+            />
+            <Text
+              className="about-paragraph"
+              copyKey={copyKeys.AboutParaThree}
+            />
+            <Text
+              className="about-paragraph"
+              copyKey={copyKeys.AboutParaFour}
+            />
+          </div>
 
-          <Text
-            className="about-header clr-text-primary"
-            copyKey={copyKeys.AboutHeaderInterests}
-          />
-          <img src={aboutImg2} alt="Anton" className="about-img" />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaFive} />
-          <Text className="about-paragraph" copyKey={copyKeys.AboutParaSix} />
+          <div className="about-body-cell">
+            <Text
+              className="about-header clr-text-primary"
+              copyKey={copyKeys.AboutHeaderInterests}
+            />
+            <img src={aboutImg2} alt="Anton" className="about-img" />
+            <Text
+              className="about-paragraph"
+              copyKey={copyKeys.AboutParaFive}
+            />
+            <Text className="about-paragraph" copyKey={copyKeys.AboutParaSix} />
+          </div>
         </div>
       </div>
     </div>
