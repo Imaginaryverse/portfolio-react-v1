@@ -1,0 +1,61 @@
+@import './constants.scss';
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 2.5vmin 2.5vmin 10vmin;
+
+  .about-body {
+    height: 100%;
+    width: 100%;
+
+    .about-header {
+      font-size: 2rem;
+      font-weight: 800;
+
+      margin: 0.5rem 0;
+    }
+
+    .about-paragraph {
+      font-size: 1.2rem;
+
+      max-width: 650px;
+    }
+
+    .about-img {
+      float: right;
+
+      width: 41%;
+      max-width: 350px;
+      height: auto;
+
+      margin-top: 0.25rem;
+      margin-left: 0.5rem;
+
+      border-radius: 10px;
+
+      /* box-shadow: -5px 5px 0px pink; */
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+
+    .about-paragraph {
+      font-size: 6vmin !important;
+    }
+
+    .about-img {
+      display: none;
+    }
+  }
+}
