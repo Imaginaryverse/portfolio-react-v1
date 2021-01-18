@@ -202,8 +202,8 @@ export const copy = [
   /* FOOTER */
   {
     key: copyKeys.FooterTheme,
-    en: 'Switch theme:',
-    sv: 'Ändra tema:',
+    en: 'Theme:',
+    sv: 'Tema:',
   },
 
   {
