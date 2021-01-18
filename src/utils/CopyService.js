@@ -88,18 +88,18 @@ export const copy = [
   /* ABOUT > Headers */
   {
     key: copyKeys.AboutHeaderAbout,
-    en: 'About Me.',
-    sv: 'Om mig.',
+    en: 'About Me',
+    sv: 'Om mig',
   },
   {
     key: copyKeys.AboutHeaderStrengths,
-    en: 'Strengths.',
-    sv: 'Styrkor.',
+    en: 'Strengths',
+    sv: 'Styrkor',
   },
   {
     key: copyKeys.AboutHeaderInterests,
-    en: 'Interests.',
-    sv: 'Intressen.',
+    en: 'Interests',
+    sv: 'Intressen',
   },
 
   /* ABOUT > Paragraphs */
@@ -120,9 +120,9 @@ export const copy = [
   {
     key: copyKeys.AboutParaThree,
     en:
-      'Creative, goal oriented and detail focused are the three words that best describe me. I find great joy in finding creative solutions to problems as well as in expressing myself creatively.',
+      'Creative, goal oriented and detail focused are the three words that best describe me. I find great joy in developing creative solutions to problems as well as in expressing myself creatively.',
     sv:
-      'Kreativ, målmedveten och detaljorienterad är de tre ord som beskriver mig allra bäst. Jag finner stor glädje i att hitta kreativa lösningar på problem liksom i att uttrycka mig kreativt.',
+      'Kreativ, målmedveten och detaljorienterad är de tre ord som beskriver mig allra bäst. Jag finner stor glädje i att utveckla kreativa lösningar på problem liksom i att uttrycka mig kreativt.',
   },
   {
     key: copyKeys.AboutParaFour,
