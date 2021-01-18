@@ -33,12 +33,14 @@ const copyKeys = {
   ContactFormH1: 'contact.form.h1',
   ContactFormName: 'contact.form.name',
   ContactFormEmail: 'contact.form.email',
+  ContactFormSubject: 'contact.form.subject',
   ContactFormMessage: 'contact.form.message',
   ContactFormCalculate: 'contact.form.calculate',
   ContactFormValidationInfo: 'contact.form.validation.info',
   ContactFormSubmit: 'contact.form.submit',
   ContactFormSentMessage: 'contact.form.sent.message',
   ContactFormOK: 'contact.form.ok',
+  ContactFormError: 'contact.form.error',
 
   /* FOOTER */
   FooterTheme: 'footer.theme',
@@ -177,6 +179,11 @@ export const copy = [
     sv: 'E-post (obligatoriskt)',
   },
   {
+    key: copyKeys.ContactFormSubject,
+    en: 'Subject (required)',
+    sv: 'Ämne (obligatoriskt)',
+  },
+  {
     key: copyKeys.ContactFormMessage,
     en: 'Message (required)',
     sv: 'Meddelande (obligatoriskt)',
@@ -207,6 +214,11 @@ export const copy = [
     key: copyKeys.ContactFormOK,
     en: 'OK',
     sv: 'OK',
+  },
+  {
+    key: copyKeys.ContactFormError,
+    en: 'Oops.. Something went wrong!',
+    sv: 'Hoppsan.. Något gick snett!',
   },
 
   /* FOOTER */

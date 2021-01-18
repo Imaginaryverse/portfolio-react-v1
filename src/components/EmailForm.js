@@ -8,16 +8,19 @@ import {
   randomFromArray,
   performOperation,
 } from '../utils/MathUtils';
+import { sendMessage } from '../utils/clientAPI';
 
 const EmailForm = () => {
   const copy = useCopy();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [question, setQuestion] = useState(undefined);
   const [answer, setAnswer] = useState('');
   const [disableSubmit, setDisableSubmit] = useState(true);
   const [messageSent, setMessageSent] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
   const isValidAnswer = () =>
     question &&
@@ -31,15 +34,24 @@ const EmailForm = () => {
     e.preventDefault();
 
     if (isValidAnswer()) {
-      console.log({ name, email, message });
+      /* setMessageSent(true); */
 
-      setMessageSent(true);
+      const data = {
+        name,
+        email,
+        subject,
+        message,
+      };
+      sendMessage(data).then((res) => {
+        res?.status === 200 ? setMessageSent(true) : setMessageError(true);
 
-      setName('');
-      setEmail('');
-      setMessage('');
-      createQuestion();
-      setAnswer('');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+        createQuestion();
+        setAnswer('');
+      });
     } else {
       alert('Please try again');
       createQuestion();
@@ -83,6 +95,19 @@ const EmailForm = () => {
             <Text copyKey={copyKeys.ContactFormOK} />
           </button>
         </div>
+      ) : messageError ? (
+        <div className="msg-sent-wrapper">
+          <Text
+            copyKey={copyKeys.ContactFormError}
+            className="msg-sent-prompt"
+          />
+          <button
+            className="ok-btn clr-disabled-btn"
+            onClick={() => setMessageError(false)}
+          >
+            <Text copyKey={copyKeys.ContactFormOK} />
+          </button>
+        </div>
       ) : (
         <form
           action="submit"
@@ -113,6 +138,16 @@ const EmailForm = () => {
             placeholderCopyKey={copyKeys.ContactFormEmail}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <Input
+            type="text"
+            name="field-subject"
+            id="field-subject"
+            className="input-text"
+            placeholderCopyKey={copyKeys.ContactFormSubject}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
             required
           />
           <Input
