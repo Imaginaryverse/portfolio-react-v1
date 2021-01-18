@@ -9,6 +9,7 @@ import {
   performOperation,
 } from '../utils/MathUtils';
 import { sendMessage } from '../utils/clientAPI';
+import EmailStatus from './EmailStatus';
 
 const EmailForm = () => {
   const copy = useCopy();
@@ -86,38 +87,19 @@ const EmailForm = () => {
   return (
     <div className="form-wrapper">
       {messageSent ? (
-        <div className="msg-sent-wrapper">
-          <Text
-            copyKey={copyKeys.ContactFormSentMessage}
-            className="msg-sent-prompt"
-          />
-          <button
-            className="ok-btn clr-disabled-btn"
-            onClick={() => setMessageSent(false)}
-          >
-            <Text copyKey={copyKeys.ContactFormOK} />
-          </button>
-        </div>
+        <EmailStatus
+          textCopy={copyKeys.ContactFormSentMessage}
+          buttonCopy={copyKeys.ContactFormOK}
+          onClick={() => setMessageSent(false)}
+        />
       ) : messageError ? (
-        <div className="msg-sent-wrapper">
-          <Text
-            copyKey={copyKeys.ContactFormError}
-            className="msg-sent-prompt"
-          />
-          <button
-            className="ok-btn clr-disabled-btn"
-            onClick={() => setMessageError(false)}
-          >
-            <Text copyKey={copyKeys.ContactFormOK} />
-          </button>
-        </div>
+        <EmailStatus
+          textCopy={copyKeys.ContactFormError}
+          buttonCopy={copyKeys.ContactFormOK}
+          onClick={() => setMessageError(false)}
+        />
       ) : messagePending ? (
-        <div className="msg-sent-wrapper">
-          <Text
-            copyKey={copyKeys.ContactFormPending}
-            className="msg-sent-prompt"
-          />
-        </div>
+        <EmailStatus textCopy={copyKeys.ContactFormPending} />
       ) : (
         <form
           action="submit"
