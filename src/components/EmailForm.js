@@ -19,6 +19,7 @@ const EmailForm = () => {
   const [message, setMessage] = useState('');
   const [question, setQuestion] = useState(undefined);
   const [answer, setAnswer] = useState('');
+  const [wrongAnswer, setWrongAnswer] = useState(false);
   const [disableSubmit, setDisableSubmit] = useState(true);
   const [messagePending, setMessagePending] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
@@ -57,7 +58,7 @@ const EmailForm = () => {
         setAnswer('');
       });
     } else {
-      alert('Please try again');
+      setWrongAnswer(true);
       createQuestion();
       setAnswer('');
     }
@@ -86,7 +87,13 @@ const EmailForm = () => {
 
   return (
     <div className="form-wrapper">
-      {messageSent ? (
+      {wrongAnswer ? (
+        <EmailStatus
+          textCopy={copyKeys.ContactFormWrongAnswer}
+          buttonCopy={copyKeys.ContactFormOK}
+          onClick={() => setWrongAnswer(false)}
+        />
+      ) : messageSent ? (
         <EmailStatus
           textCopy={copyKeys.ContactFormSentMessage}
           buttonCopy={copyKeys.ContactFormOK}

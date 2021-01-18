@@ -38,6 +38,7 @@ const copyKeys = {
   ContactFormCalculate: 'contact.form.calculate',
   ContactFormValidationInfo: 'contact.form.validation.info',
   ContactFormSubmit: 'contact.form.submit',
+  ContactFormWrongAnswer: 'contact.form.wrong.answer',
   ContactFormPending: 'contact.form.pending',
   ContactFormSentMessage: 'contact.form.sent.message',
   ContactFormOK: 'contact.form.ok',
@@ -205,6 +206,11 @@ export const copy = [
     key: copyKeys.ContactFormSubmit,
     en: 'SUBMIT',
     sv: 'SKICKA',
+  },
+  {
+    key: copyKeys.ContactFormWrongAnswer,
+    en: 'Wrong answer! Try again.',
+    sv: 'Fel svar! Försök igen.',
   },
   {
     key: copyKeys.ContactFormPending,
