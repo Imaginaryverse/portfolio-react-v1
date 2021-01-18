@@ -153,9 +153,13 @@
   width: 18px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .hero {
     padding: 5vmin 2.5vmin;
+
+    .hero-emoji {
+      display: none;
+    }
   }
 
   .hero-intro {
