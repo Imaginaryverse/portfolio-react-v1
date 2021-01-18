@@ -2,6 +2,9 @@ import { useContext } from 'react';
 import { Context } from '../store/Store';
 
 const copyKeys = {
+  /* GENERAL */
+  GeneralComingSoon: 'general.coming.soon',
+
   /* NAVBAR */
   NavHome: 'nav.home',
   NavProjects: 'nav.projects',
@@ -43,6 +46,13 @@ const copyKeys = {
 };
 
 export const copy = [
+  /* GENERAL */
+  {
+    key: copyKeys.GeneralComingSoon,
+    en: 'Coming soon...',
+    sv: 'Kommer snart...',
+  },
+
   /* NAVBAR */
   {
     key: copyKeys.NavHome,

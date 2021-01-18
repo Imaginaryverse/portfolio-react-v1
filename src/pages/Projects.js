@@ -12,7 +12,10 @@ const Projects = () => {
   return (
     <div className="main-wrapper">
       <Text copyKey={copyKeys.NavProjects} type={textTypes.headerLarge} />
-      {currentItem ? (
+
+      <Text copyKey={copyKeys.GeneralComingSoon} type={textTypes.headerLarge} />
+
+      {/* {currentItem ? (
         <ProjectDisplay
           currentItem={currentItem}
           setCurrentItem={setCurrentItem}
@@ -27,7 +30,7 @@ const Projects = () => {
             index={i}
           />
         ))
-      )}
+      )} */}
     </div>
   );
 };
