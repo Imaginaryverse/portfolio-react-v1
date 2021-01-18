@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://sharp-thompson-80f9df.netlify.app/.netlify/functions';
+const baseUrl = 'https://www.antonbertilsson.se/.netlify/functions';
 
 export const sendMessage = async (data) => {
   try {
