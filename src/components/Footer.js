@@ -75,6 +75,7 @@ const Footer = () => {
           </Link>
         </section>
       </div>
+
       <div className="footer-top">
         <div className="theme-container">
           <Text copyKey={copyKeys.FooterTheme} /> <ThemeButton />
