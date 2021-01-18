@@ -96,4 +96,9 @@ $clr-accent-dark: #e93c0c;
       background-color: $clr-tertiary-dark;
     }
   }
+
+  /* FOOTER */
+  .footer-link {
+    background-image: linear-gradient($clr-text-primary, $clr-text-primary);
+  }
 }

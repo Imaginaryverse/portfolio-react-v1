@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/layouts/footer.scss';
+import copyKeys from '../utils/CopyService';
 import LanguageButton from './LanguageButton';
+import Text from './Text';
 import ThemeButton from './ThemeButton';
 
 const Footer = () => {
@@ -9,19 +12,67 @@ const Footer = () => {
       <div className="footer-bottom">
         <section className="grid-section cell-1">
           <p>© 2020-2021</p>
-          <p>Anton Bertilsson</p>
+          <Link to="/">
+            <Text
+              copyKey={'Anton Bertilsson'}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
         </section>
         <section className="grid-section cell-2">
-          <p>GitHub</p>
-          <p>Codepen</p>
-          <p>LinkedIn</p>
+          <a
+            href="https://github.com/Imaginaryverse"
+            className="footer-link clr-text-primary"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://codepen.io/imaginaryverse"
+            className="footer-link clr-text-primary"
+            target="_blank"
+          >
+            Codepen
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anton-bertilsson-3ab1ba66/"
+            className="footer-link clr-text-primary"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
         </section>
         <section className="grid-section cell-3">
-          <p>HOME</p>
-          <p>PROJECTS</p>
-          <p>ABOUT ME</p>
-          <p>BLOG</p>
-          <p>CONTACT</p>
+          <Link to="/">
+            <Text
+              copyKey={copyKeys.NavHome}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
+          <Link to="/projects">
+            <Text
+              copyKey={copyKeys.NavProjects}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
+          <Link to="/about">
+            <Text
+              copyKey={copyKeys.NavAbout}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
+          <Link to="/blog">
+            <Text
+              copyKey={copyKeys.NavBlog}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
+          <Link to="/projects">
+            <Text
+              copyKey={copyKeys.NavContact}
+              className="footer-link clr-text-primary"
+            />
+          </Link>
         </section>
       </div>
       <div className="footer-top">

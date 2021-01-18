@@ -100,4 +100,9 @@ $clr-enabled-btn: #7f90dc;
   .input-calculate {
     border: 1px solid $clr-text-primary;
   }
+
+  /* FOOTER */
+  .footer-link {
+    background-image: linear-gradient($clr-text-primary, $clr-text-primary);
+  }
 }
