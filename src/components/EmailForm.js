@@ -19,6 +19,7 @@ const EmailForm = () => {
   const [question, setQuestion] = useState(undefined);
   const [answer, setAnswer] = useState('');
   const [disableSubmit, setDisableSubmit] = useState(true);
+  const [messagePending, setMessagePending] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
@@ -34,7 +35,7 @@ const EmailForm = () => {
     e.preventDefault();
 
     if (isValidAnswer()) {
-      /* setMessageSent(true); */
+      setMessagePending(true);
 
       const data = {
         name,
@@ -43,6 +44,8 @@ const EmailForm = () => {
         message,
       };
       sendMessage(data).then((res) => {
+        setMessagePending(false);
+
         res?.status === 200 ? setMessageSent(true) : setMessageError(true);
 
         setName('');
@@ -107,6 +110,13 @@ const EmailForm = () => {
           >
             <Text copyKey={copyKeys.ContactFormOK} />
           </button>
+        </div>
+      ) : messagePending ? (
+        <div className="msg-sent-wrapper">
+          <Text
+            copyKey={copyKeys.ContactFormPending}
+            className="msg-sent-prompt"
+          />
         </div>
       ) : (
         <form
