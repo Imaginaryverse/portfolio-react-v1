@@ -24,6 +24,7 @@ const Footer = () => {
             href="https://github.com/Imaginaryverse"
             className="footer-link clr-text-primary"
             target="_blank"
+            rel="noreferrer"
           >
             GitHub
           </a>
@@ -31,6 +32,7 @@ const Footer = () => {
             href="https://codepen.io/imaginaryverse"
             className="footer-link clr-text-primary"
             target="_blank"
+            rel="noreferrer"
           >
             Codepen
           </a>
@@ -38,6 +40,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/anton-bertilsson-3ab1ba66/"
             className="footer-link clr-text-primary"
             target="_blank"
+            rel="noreferrer"
           >
             LinkedIn
           </a>
