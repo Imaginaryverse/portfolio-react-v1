@@ -4,6 +4,9 @@ import copyKeys from '../utils/CopyService';
 import '../styles/layouts/about.scss';
 import lovem1 from '../assets/lovem1.jpg';
 import aboutImg2 from '../assets/aboutImg2.jpg';
+import { Link } from 'react-router-dom';
+import IconFA from '../components/IconFA';
+import icons from '../utils/Icons';
 
 const About = () => {
   return (
@@ -48,6 +51,12 @@ const About = () => {
             <Text className="about-paragraph" copyKey={copyKeys.AboutParaSix} />
           </div>
         </div>
+        <Link to="/contact" className="about-cta">
+          <div className="about-cta-arrow-container">
+            <IconFA icon={icons.chevronRight} className="about-cta-arrow" />
+          </div>
+          <Text copyKey={copyKeys.NavContact} />
+        </Link>
       </div>
     </div>
   );

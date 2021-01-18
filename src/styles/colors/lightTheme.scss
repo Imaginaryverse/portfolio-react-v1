@@ -94,6 +94,17 @@ $clr-enabled-btn: #7f90dc;
     }
   }
 
+  /* ABOUT */
+  .about-cta {
+    border: 1px solid $clr-accent-light;
+    color: $clr-accent-light;
+
+    &:hover {
+      border: 1px solid $clr-accent-dark;
+      color: $clr-accent-dark;
+    }
+  }
+
   /* CONTACT > EMAIL FORM */
   .input-text,
   .input-msg,

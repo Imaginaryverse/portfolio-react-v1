@@ -3,8 +3,8 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
   width: 100%;
   min-height: 100vh;
@@ -14,6 +14,11 @@
   .about-body {
     height: 100%;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     .about-body-cell {
       margin-bottom: 3rem;
@@ -52,6 +57,35 @@
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
       }
     }
+  }
+
+  .about-cta {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.2rem;
+
+    display: flex;
+
+    transition: all 0.2s ease;
+  }
+
+  .about-cta-arrow-container {
+    overflow: hidden;
+
+    transform: translateY(-2px);
+
+    width: 0px;
+
+    transition: all 0.2s ease;
+  }
+
+  .about-cta-arrow {
+    font-size: 0.8rem;
+  }
+
+  .about-cta:hover > .about-cta-arrow-container {
+    width: 18px;
   }
 }
 
