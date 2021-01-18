@@ -77,10 +77,10 @@ const Footer = () => {
       </div>
       <div className="footer-top">
         <div className="theme-container">
-          Theme: <ThemeButton />
+          <Text copyKey={copyKeys.FooterTheme} /> <ThemeButton />
         </div>
         <div className="lang-container">
-          Language: <LanguageButton />
+          <Text copyKey={copyKeys.FooterLanguage} /> <LanguageButton />
         </div>
       </div>
     </footer>

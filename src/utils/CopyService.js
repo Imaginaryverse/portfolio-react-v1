@@ -36,6 +36,10 @@ const copyKeys = {
   ContactFormSubmit: 'contact.form.submit',
   ContactFormSentMessage: 'contact.form.sent.message',
   ContactFormAnotherMessage: 'contact.form.another.message',
+
+  /* FOOTER */
+  FooterTheme: 'footer.theme',
+  FooterLanguage: 'footer.language',
 };
 
 export const copy = [
@@ -193,6 +197,19 @@ export const copy = [
     key: copyKeys.ContactFormAnotherMessage,
     en: 'Send another?',
     sv: 'Skicka nytt?',
+  },
+
+  /* FOOTER */
+  {
+    key: copyKeys.FooterTheme,
+    en: 'Switch theme:',
+    sv: 'Ändra tema:',
+  },
+
+  {
+    key: copyKeys.FooterLanguage,
+    en: 'Language:',
+    sv: 'Språk:',
   },
 ];
 
