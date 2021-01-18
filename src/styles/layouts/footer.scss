@@ -96,4 +96,13 @@
       align-items: center !important;
     }
   }
+
+  .footer-top {
+    flex-direction: column !important;
+
+    .theme-container,
+    .lang-container {
+      margin: 0.25rem 0 !important;
+    }
+  }
 }
