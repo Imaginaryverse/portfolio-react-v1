@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 600px) {
   .form-content {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .msg-sent-wrapper {
@@ -128,11 +128,6 @@
   .form-h1 {
     font-size: 1.5rem;
     font-weight: 600;
-  }
-
-  .input-text,
-  .input-calculate {
-    height: 1.5rem;
   }
 
   .input-text,

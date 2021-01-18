@@ -172,23 +172,23 @@ export const copy = [
   },
   {
     key: copyKeys.ContactFormName,
-    en: 'Name (required)',
-    sv: 'Namn (obligatoriskt)',
+    en: 'Name',
+    sv: 'Namn',
   },
   {
     key: copyKeys.ContactFormEmail,
-    en: 'Email (required)',
-    sv: 'E-post (obligatoriskt)',
+    en: 'Email',
+    sv: 'E-post',
   },
   {
     key: copyKeys.ContactFormSubject,
-    en: 'Subject (required)',
-    sv: 'Ämne (obligatoriskt)',
+    en: 'Subject',
+    sv: 'Ämne',
   },
   {
     key: copyKeys.ContactFormMessage,
-    en: 'Message (required)',
-    sv: 'Meddelande (obligatoriskt)',
+    en: 'Message',
+    sv: 'Meddelande',
   },
   {
     key: copyKeys.ContactFormCalculate,
