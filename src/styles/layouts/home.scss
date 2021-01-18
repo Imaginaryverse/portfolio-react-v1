@@ -155,21 +155,20 @@
 
 @media screen and (max-width: 425px) {
   .hero {
-    padding: 2.5vmin 2.5vmin 10vmin;
+    padding: 5vmin 2.5vmin;
   }
 
   .hero-intro {
     font-size: 7vmin;
-
-    margin-bottom: 0.5rem;
+    font-weight: 600;
 
     line-height: 1;
   }
 
   .hero-header {
-    font-size: 12.5vmin;
+    font-size: 15vmin;
 
-    max-width: 250px;
+    max-width: 80vw;
 
     margin-bottom: 0.5rem;
 
@@ -181,7 +180,7 @@
 
     max-width: 350px;
 
-    margin: 0.5rem 0 2rem;
+    margin: 0.5rem 0 1.5rem;
   }
 
   .hero-cta {
