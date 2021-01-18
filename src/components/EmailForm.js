@@ -77,10 +77,10 @@ const EmailForm = () => {
             className="msg-sent-prompt"
           />
           <button
-            className="send-another-btn clr-disabled-btn"
+            className="ok-btn clr-disabled-btn"
             onClick={() => setMessageSent(false)}
           >
-            <Text copyKey={copyKeys.ContactFormAnotherMessage} />
+            <Text copyKey={copyKeys.ContactFormOK} />
           </button>
         </div>
       ) : (

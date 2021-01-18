@@ -35,7 +35,7 @@ const copyKeys = {
   ContactFormValidationInfo: 'contact.form.validation.info',
   ContactFormSubmit: 'contact.form.submit',
   ContactFormSentMessage: 'contact.form.sent.message',
-  ContactFormAnotherMessage: 'contact.form.another.message',
+  ContactFormOK: 'contact.form.ok',
 
   /* FOOTER */
   FooterTheme: 'footer.theme',
@@ -194,9 +194,9 @@ export const copy = [
     sv: 'Meddelande skickat!',
   },
   {
-    key: copyKeys.ContactFormAnotherMessage,
-    en: 'Send another?',
-    sv: 'Skicka nytt?',
+    key: copyKeys.ContactFormOK,
+    en: 'OK',
+    sv: 'OK',
   },
 
   /* FOOTER */
