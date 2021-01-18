@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { Context } from '../store/Store';
+import React from 'react';
 import { useCopy } from '../utils/CopyService';
 
 export const textTypes = {
@@ -19,7 +18,6 @@ const Text = ({
   lowerCase,
   capitalizeEach,
 }) => {
-  const [state] = useContext(Context);
   const copy = useCopy();
 
   const getCopy = () => {

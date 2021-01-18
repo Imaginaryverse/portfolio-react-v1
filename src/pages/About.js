@@ -15,6 +15,7 @@ const About = () => {
         <div className="about-body">
           <div className="about-body-cell">
             <Text
+              type={textTypes.headerLarge}
               className="about-header clr-text-primary"
               copyKey={copyKeys.AboutHeaderAbout}
             />
@@ -25,6 +26,7 @@ const About = () => {
 
           <div className="about-body-cell">
             <Text
+              type={textTypes.headerLarge}
               className="about-header clr-text-primary"
               copyKey={copyKeys.AboutHeaderStrengths}
             />
@@ -40,6 +42,7 @@ const About = () => {
 
           <div className="about-body-cell">
             <Text
+              type={textTypes.headerLarge}
               className="about-header clr-text-primary"
               copyKey={copyKeys.AboutHeaderInterests}
             />

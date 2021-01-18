@@ -1,5 +1,5 @@
 import React from 'react';
-import copyKeys, { useCopy } from '../utils/CopyService';
+import { useCopy } from '../utils/CopyService';
 
 const Input = ({
   name,
