@@ -17,6 +17,7 @@ const ThemeButton = ({ className }) => {
 
   return (
     <button
+      aria-label="theme button"
       className={`nav-theme-btn ${className}`}
       onClick={() => {
         changeTheme(selectedDark ? 'light' : 'dark');
