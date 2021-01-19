@@ -48,7 +48,7 @@ const Projects = () => {
               <div className="project-link">
                 <img
                   className="project-thumbnail"
-                  src="https://images.unsplash.com/photo-1600021781227-c918dc05ab79?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1533&q=80"
+                  src="https://images.unsplash.com/photo-1523474438810-b04a2480633c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
                   alt="developer icon"
                 />
                 <div className="project-info-container">
