@@ -165,9 +165,9 @@ export const copy = [
   {
     key: copyKeys.AboutParaFive,
     en:
-      'Besides UI/UX design and web development I enjoy learning about psychology, history and natural science. My ambition is to contribute to making the Internet as user friendly and accessible as possible for all people across the world as I feel that education and personal growth should be global human rights.',
+      'Besides web development and UI/UX design I enjoy learning about psychology, history and natural science. My ambition is to contribute to making the Internet as user friendly and accessible as possible for all people across the world as I feel that education and personal growth should be global human rights.',
     sv:
-      'Utöver UI/UX-design och webbutveckling finner jag även glädje i att lära mig om psykologi, historia och naturvetenskap. Min ambition är att bidra till att göra Internet så användarvänligt och tilllgängligt som möjligt för alla människor världen över då jag anser att utbildning och personlig utveckling borde vara globala mänskliga rättigheter.',
+      'Utöver webbutveckling och UI/UX-design finner jag även glädje i att lära mig om psykologi, historia och naturvetenskap. Min ambition är att bidra till att göra Internet så användarvänligt och tilllgängligt som möjligt för alla människor världen över då jag anser att utbildning och personlig utveckling borde vara globala mänskliga rättigheter.',
   },
   {
     key: copyKeys.AboutParaSix,
