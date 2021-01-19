@@ -1,0 +1,82 @@
+@import './constants.scss';
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 2rem;
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .projects-items {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem;
+
+      /* border: 1px dashed yellow; */
+
+      .project-container {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        overflow: hidden;
+
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+        .project-link {
+          position: relative;
+
+          .project-thumbnail {
+            width: 100%;
+            height: 100%;
+
+            transition: all 0.5s ease;
+          }
+
+          .project-info-container {
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            position: absolute;
+            top: 0;
+
+            display: flex;
+            flex-direction: column;
+
+            overflow: hidden;
+
+            height: 100%;
+            width: 100%;
+
+            padding: 0.75rem;
+
+            color: white;
+
+            .project-description {
+              margin-top: 0.5rem;
+
+              opacity: 0;
+
+              transition: all 0.5s ease;
+            }
+          }
+
+          &:hover .project-description {
+            opacity: 1;
+          }
+
+          &:hover .project-thumbnail {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
