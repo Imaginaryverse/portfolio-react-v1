@@ -137,16 +137,16 @@ export const copy = [
   {
     key: copyKeys.AboutParaOne,
     en:
-      "I'm a budding frontend developer with a great interest in UI/UX design, who loves to code and build interactive, responsive websites with HTML, Sass and JavaScript in React.",
+      "I'm a budding frontend developer with a great interest in UI/UX design, who loves to code and build interactive, responsive websites in React using JavaScript, Sass and HTML.",
     sv:
-      'Jag är en blivande frontend utvecklare med ett stort intresse för UI/UX-design som älskar att koda och bygga interaktiva, responsiva webbplatser med HTML, Sass och JavaScript i React.',
+      'Jag är en blivande frontend utvecklare med ett stort intresse för UI/UX-design som älskar att koda och bygga interaktiva, responsiva webbplatser  i React med JavaScript, Sass och HTML.',
   },
   {
     key: copyKeys.AboutParaTwo,
     en:
-      "In the summer of 2020 I started to teach myself about programming and web development. Since then I have learnt how to code in JavaScript, HTML, CSS, Sass and React, as well as version control using Git. I have mainly learnt through resources such as Harvard's CS50, freeCodeCamp and TheOdinProject, as well as a myriad of personal and collaborative projects.",
+      "In the summer of 2020 I started to teach myself about programming and web development. Since then I have learnt how to code in JavaScript, HTML, CSS, Sass and React, as well as version control using Git. I have mainly learnt through resources such as Harvard's CS50, freeCodeCamp and TheOdinProject, as well as some personal and collaborative projects.",
     sv:
-      'Under sommaren år 2020 började jag lära mig om programmering och webbutveckling. Sedan dess har jag lärt mig koda i JavaScript, HTML, CSS, Sass och React, samt versionskontrollera med Git. Jag har främst lärt mig genom resurser så som Harvards CS50, freeCodeCamp och TheOdinProject, samt en myriad av egna och kollaborativa projekt.',
+      'Under sommaren år 2020 började jag lära mig om programmering och webbutveckling. Sedan dess har jag lärt mig koda i JavaScript, HTML, CSS, Sass och React, samt versionskontrollera med Git. Jag har främst lärt mig genom resurser så som Harvards CS50, freeCodeCamp och TheOdinProject, samt några egna och kollaborativa projekt.',
   },
   {
     key: copyKeys.AboutParaThree,
@@ -165,7 +165,7 @@ export const copy = [
   {
     key: copyKeys.AboutParaFive,
     en:
-      'Besides UI/UX design and web development I find a lot of joy in learning about psychology, history and natural science. My ambition is to contribute to making the Internet as user friendly and accessible as possible for all people across the world as I feel that education and personal growth should be global human rights.',
+      'Besides UI/UX design and web development I enjoy learning about psychology, history and natural science. My ambition is to contribute to making the Internet as user friendly and accessible as possible for all people across the world as I feel that education and personal growth should be global human rights.',
     sv:
       'Utöver UI/UX-design och webbutveckling finner jag även glädje i att lära mig om psykologi, historia och naturvetenskap. Min ambition är att bidra till att göra Internet så användarvänligt och tilllgängligt som möjligt för alla människor världen över då jag anser att utbildning och personlig utveckling borde vara globala mänskliga rättigheter.',
   },
