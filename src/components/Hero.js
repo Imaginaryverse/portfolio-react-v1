@@ -11,7 +11,7 @@ import Text, { textTypes } from './Text';
 const Hero = () => {
   return (
     <div className="hero">
-      <Link to={routes.about} className="hero-intro acc-hov">
+      <Link to={routes.about} className="hero-intro acc-hov anim-fade-in">
         <Text copyKey={copyKeys.HomeHeroIntro} />
         <div className="hero-emoji">
           🧑🏻‍💻
@@ -22,14 +22,14 @@ const Hero = () => {
       </Link>
       <Text
         type={textTypes.headerLarge}
-        className="hero-header clr-text-primary"
+        className="hero-header clr-text-primary anim-fade-in"
         copyKey={copyKeys.HomeHeroHeader}
       />
       <Text
-        className="hero-presentation clr-text-primary"
+        className="hero-presentation clr-text-primary anim-fade-in"
         copyKey={copyKeys.HomeHeroPresentation}
       />
-      <Link to={routes.projects} className="hero-cta">
+      <Link to={routes.projects} className="hero-cta anim-fade-in">
         <div className="hero-cta-arrow-container">
           <IconFA icon={icons.chevronRight} className="hero-cta-arrow" />
         </div>
