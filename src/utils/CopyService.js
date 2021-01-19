@@ -4,6 +4,7 @@ import { Context } from '../store/Store';
 const copyKeys = {
   /* GENERAL */
   GeneralComingSoon: 'general.coming.soon',
+  GeneralWIP: 'general.wip',
 
   /* NAVBAR */
   NavHome: 'nav.home',
@@ -28,6 +29,13 @@ const copyKeys = {
   AboutParaFour: 'about.para.four',
   AboutParaFive: 'about.para.five',
   AboutParaSix: 'about.para.six',
+
+  /* PROJECTS > Projects */
+  ProjectsSourceCode: 'projects.source.code',
+  ProjectsPortfolioTitle: 'projects.portfolio.title',
+  ProjectsPortfolioDesc: 'projects.portfolio.desc',
+  ProjectsChatAppTitle: 'projects.chat.app.title',
+  ProjectsPaletteGeneratorTitle: 'projects.palette.generator.title',
 
   /* CONTACT > CONTACT FORM */
   ContactFormH1: 'contact.form.h1',
@@ -55,6 +63,11 @@ export const copy = [
     key: copyKeys.GeneralComingSoon,
     en: 'Coming soon...',
     sv: 'Kommer snart...',
+  },
+  {
+    key: copyKeys.GeneralWIP,
+    en: 'Work in progress...',
+    sv: 'Under arbete...',
   },
 
   /* NAVBAR */
@@ -162,6 +175,33 @@ export const copy = [
       "When I'm not coding I like to spend time with my friends and family, with my guitar or out in nature.",
     sv:
       'När jag inte kodar ägnar jag gärna tid med mina vänner och familj, med min gitarr eller ute naturen.',
+  },
+
+  /* PROJECTS > Projects */
+  {
+    key: copyKeys.ProjectsSourceCode,
+    en: 'Click on the thumbnail to view the source code on GitHub.',
+    sv: ' Klicka på bilden för att se källkoden på GitHub.',
+  },
+  {
+    key: copyKeys.ProjectsPortfolioTitle,
+    en: 'Portfolio',
+    sv: 'Portfölj',
+  },
+  {
+    key: copyKeys.ProjectsPortfolioDesc,
+    en: 'Built in React using Javascript, Sass and HTML.',
+    sv: 'Byggd i React med Javascript, Sass och HTML.',
+  },
+  {
+    key: copyKeys.ProjectsChatAppTitle,
+    en: 'Chat App',
+    sv: 'Chatt app',
+  },
+  {
+    key: copyKeys.ProjectsPaletteGeneratorTitle,
+    en: 'Palette Generator',
+    sv: 'Paletteskapare',
   },
 
   /* CONTACT > FORM */

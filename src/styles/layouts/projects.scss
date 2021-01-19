@@ -11,7 +11,7 @@
 
   .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 
     .projects-items {
       display: flex;
@@ -25,6 +25,7 @@
         justify-content: center;
 
         width: 100%;
+        min-width: 300px;
         max-width: 300px;
         height: 300px;
         overflow: hidden;
@@ -43,7 +44,6 @@
           }
 
           .project-info-container {
-            background-color: rgba($color: #000000, $alpha: 0.3);
             position: absolute;
             top: 0;
 
@@ -55,12 +55,19 @@
             height: 100%;
             width: 100%;
 
-            padding: 0.75rem;
+            padding: 1rem;
 
             color: white;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: rgba($color: #000000, $alpha: 0.5);
+            }
 
             .project-description {
-              margin-top: 0.5rem;
+              margin: 0.5rem 0;
 
               opacity: 0;
 
@@ -78,5 +85,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .project-description {
+    opacity: 1 !important;
   }
 }
