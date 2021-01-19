@@ -94,6 +94,15 @@ $clr-enabled-btn: #7f90dc;
     }
   }
 
+  /* PROJECTS > Projects */
+  .project-info-container {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
   /* ABOUT */
   .about-cta {
     border: 1px solid $clr-accent-light;

@@ -1,4 +1,5 @@
 import React from 'react';
+import routes from '../utils/Routes';
 import Text, { textTypes } from '../components/Text';
 import copyKeys from '../utils/CopyService';
 import '../styles/layouts/about.scss';
@@ -54,7 +55,7 @@ const About = () => {
             <Text className="about-paragraph" copyKey={copyKeys.AboutParaSix} />
           </div>
         </div>
-        <Link to="/contact" className="about-cta">
+        <Link to={routes.contact} className="about-cta">
           <div className="about-cta-arrow-container">
             <IconFA icon={icons.chevronRight} className="about-cta-arrow" />
           </div>
