@@ -201,7 +201,7 @@ export const copy = [
   {
     key: copyKeys.ProjectsPaletteGeneratorTitle,
     en: 'Palette Generator',
-    sv: 'Paletteskapare',
+    sv: 'Palettgenerator',
   },
 
   /* CONTACT > FORM */
